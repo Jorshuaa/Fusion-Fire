@@ -3,7 +3,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: boder-box;
 }
 html{
     scroll-behavior: smooth;
@@ -14,14 +14,14 @@ html{
     --other-background-color: #eee;
     --primary-font-color: #e3e3e3;
     --secondary-font-color: #2F4858;
-    --primary-font-family: 'Montserrat', cursive;
-    --secondary-font-family: 'Poppins', cursive;
+    --primary-font-family: 'Montserrat', verdana;
+    --secondary-font-family: 'Poppins', verdana;
     /* --primary-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 section.first{
     width: 100%;
     height: 100vh;
-    background-image:url("images/img1.jpg");
+    background-image:url("../images/img1.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -275,7 +275,7 @@ section.third{
 section.fourth{
     width: 100%;
     height: 30vh;
-    background-color: #193e54;
+    background-color: var(--secondary-background-color);
     color: var(--primary-font-color);
     display: flex;
     flex-direction: column;
@@ -385,6 +385,14 @@ section.fifth{
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+.card-number{
+    /* background-color: lightblue; */
+    width: 10%;
+    height: 5%;
+    position: relative;
+    right: 45%;
+    bottom: 5%;
 }
 .feedback-card img{
     background-color: #292b51;
@@ -582,6 +590,7 @@ section.sixth{
 }
 .newsletter-form input[type = email] {
     flex: 1;
+    border-radius: 5px;
 }
 .newsletter-form input[type = submit] {
     padding: 5px;
@@ -592,9 +601,13 @@ section.sixth{
 }
 section.seventh{
     width: 100%;
-    height: 10vh;
+    height: 12vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     background-color: var(--secondary-background-color);
     color: var(--primary-font-color);
+    padding: 0px 0px 10px 0px;
 }
 .seventh footer{
     /* background-color: yellow; */
@@ -645,6 +658,13 @@ section.seventh{
     color: var(--primary-font-color);
     text-decoration: none;
     font-size: 1.5vw;
+}
+.adv{
+    font-family: var(--primary-font-family);
+    font-size: 1.2vw;
+}
+.adv a{
+    color: #fff;
 }
 
 @media screen and (max-width:580px) and (min-width:320px) {
@@ -940,7 +960,7 @@ section.seventh{
     }
     .newsletter-form{
         /* background-color: sandybrown; */
-        width: 90%;
+        width: 95%;
         height: 5vh;
         padding: 5px;
     }
@@ -964,7 +984,7 @@ section.seventh{
     section.seventh{
         /* background-color: yellow; */
         width: 100%;
-        height: 10vh;
+        height: 12vh;
     }
     footer{
         display: flex;
@@ -972,21 +992,22 @@ section.seventh{
         /* background-color: lightcoral; */
     }
     .footer-left{
-        width: 33%;
+        width: 27%;
         height: 10vh;
-        font-size: 3.5vw;
+        font-size: 3.2vw;
         display: flex;
         align-items: center;
         padding-left: 5%;
+        /* background-color: #7cb1cf; */
     }
     .footer-center{
         /* background-color: rgb(41, 128, 0); */
-        width: 30%;
+        width: 37%;
         height: 10vh;
     }
     .footer-right{
         /* background-color: rgb(38, 0, 128); */
-        width: 37%;
+        width: 36%;
         height: 10vh;
         display: flex;
         flex-direction: column;
@@ -996,6 +1017,10 @@ section.seventh{
     .footer-right a{
         font-size: 3.2vw;
         /* background-color: rgb(205, 90, 161); */
+    }
+    .adv{
+        font-family: var(--primary-font-family);
+        font-size: 3.3vw;
     }
     /* Seventh section end */
 }
@@ -1071,6 +1096,7 @@ section.seventh{
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
     .service-logo img{
         width: 110px;
@@ -1278,8 +1304,8 @@ section.seventh{
         padding: 5px;
     }
     .newsletter-form svg{
-        width: 5.5vw;
-        height: 5.5vw;
+        width: 4vw;
+        height: 4vw;
         fill: #aaa;
     }
     .newsletter-form input{
@@ -1299,7 +1325,7 @@ section.seventh{
     section.seventh{
         /* background-color: yellow; */
         width: 100%;
-        height: 10vh;
+        height: 15vh;
     }
     footer{
         display: flex;
@@ -1319,6 +1345,10 @@ section.seventh{
         width: 28%;
         height: 10vh;
     }
+    .footer-center svg{
+        width: 3vw;
+        height: 3vw;
+    }
     .footer-right{
         /* background-color: rgb(38, 0, 128); */
         width: 39%;
@@ -1331,6 +1361,10 @@ section.seventh{
     .footer-right a{
         font-size: 3.2vw;
         /* background-color: rgb(205, 90, 161); */
+    }
+    .adv{
+        font-family: var(--primary-font-family);
+        font-size: 3.3vw;
     }
     /* Seventh section end */
 }
